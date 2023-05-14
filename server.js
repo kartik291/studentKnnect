@@ -65,7 +65,7 @@ app.get("/",function (req, res) {
   
      const options = {
       method:"POST",
-      auth: "lovanshu:4e7be593eb15f9a65e57239e343e86e8-us9"
+      auth: "lovanshu:"+ process.env.API_KEY
     }
   
      const request = https.request(url, options, function (response) {
